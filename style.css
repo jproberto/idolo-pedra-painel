@@ -24,3 +24,9 @@
 .invest-tabs{margin-bottom:16px}
 .investigation-select{max-width:100%}
 .poi-detail{margin-top:12px}
+
+/* Rolador flutuante */
+.dice-launch{position:fixed;right:22px;bottom:22px;z-index:20;border:1px solid #9278aa;background:#49375a;color:#fff;border-radius:999px;padding:14px 18px;box-shadow:0 8px 28px #0009;font-weight:700}
+.dice-panel{position:fixed;right:20px;bottom:82px;z-index:21;width:min(430px,calc(100vw - 28px));max-height:calc(100vh - 115px);overflow:auto;background:#1b1e27;border:1px solid #665477;border-radius:16px;padding:16px;box-shadow:0 16px 50px #000b}
+.dice-panel h2{font-size:17px;margin:0 0 10px}.dice-panel .dice-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.dice-panel label{font-size:11px;color:#b9c1ce;display:grid;gap:5px;margin:7px 0}.dice-panel input,.dice-panel select{width:100%;background:#10141a;color:#f3f4f6;border:1px solid #3b4351;border-radius:7px;padding:9px}.dice-panel .dice-actions{display:flex;gap:8px;margin-top:12px}.dice-panel .dice-actions button{flex:1}.dice-panel .dice-results{border-top:1px solid #39404c;margin-top:12px;padding-top:10px;font-size:12px;line-height:1.7}.dice-panel .die-chip{display:inline-block;border:1px solid #665477;border-radius:7px;padding:5px 8px;margin:3px}.dice-panel .die-chip.keep{background:#49375a;border-color:#b69acb}.dice-panel .dice-note{font-size:10px;color:#9ba5b4;line-height:1.5}.dice-panel .dice-close{float:right;background:transparent;border:0;color:#cbd5e1;font-size:20px}.roll-entry{background:#191d25;border:1px solid #303744;border-radius:10px;padding:12px;margin:9px 0;font-size:12px}.roll-entry strong{color:#e2d3ef}.roll-entry .muted{font-size:10px}
+@media(max-width:600px){.dice-launch{right:14px;bottom:14px}.dice-panel{right:10px;bottom:72px}}
