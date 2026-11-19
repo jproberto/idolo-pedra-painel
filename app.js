@@ -142,4 +142,4 @@ document.addEventListener('change',e=>{if(e.target.dataset.chainStep){const [ci,
 document.addEventListener('input',e=>{let id=e.target.id;if(id==='notes')st.notes=e.target.value;else if(id==='local-note')st.custom['r'+st.selected]=e.target.value;else if(id.startsWith('desc-'))st.custom['desc'+id.slice(5)]=e.target.value;else if(e.target.dataset.clue)st.custom['clue'+e.target.dataset.clue]=e.target.value;else if(e.target.dataset.char)st.custom[e.target.dataset.char]=e.target.value;else if(e.target.dataset.note)st.custom['c'+e.target.dataset.note]=e.target.value;else if(id==='search'){st.search=e.target.value;save();let pos=e.target.selectionStart;investigation();let search=document.getElementById('search');if(search){search.focus();search.setSelectionRange(pos,pos)}return}save()});
 document.getElementById('menu').onclick=()=>document.querySelector('aside').classList.toggle('open');
 function backup(){let b=new Blob([JSON.stringify(st,null,2)],{type:'application/json'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='backup-idolo-de-pedra.json';a.click();URL.revokeObjectURL(u)}
-render();
+ensureDiceUI();render();
