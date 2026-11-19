@@ -30,3 +30,26 @@
 .dice-panel{position:fixed;right:20px;bottom:82px;z-index:21;width:min(430px,calc(100vw - 28px));max-height:calc(100vh - 115px);overflow:auto;background:#1b1e27;border:1px solid #665477;border-radius:16px;padding:16px;box-shadow:0 16px 50px #000b}
 .dice-panel h2{font-size:17px;margin:0 0 10px}.dice-panel .dice-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.dice-panel label{font-size:11px;color:#b9c1ce;display:grid;gap:5px;margin:7px 0}.dice-panel input,.dice-panel select{width:100%;background:#10141a;color:#f3f4f6;border:1px solid #3b4351;border-radius:7px;padding:9px}.dice-panel .dice-actions{display:flex;gap:8px;margin-top:12px}.dice-panel .dice-actions button{flex:1}.dice-panel .dice-results{border-top:1px solid #39404c;margin-top:12px;padding-top:10px;font-size:12px;line-height:1.7}.dice-panel .die-chip{display:inline-block;border:1px solid #665477;border-radius:7px;padding:5px 8px;margin:3px}.dice-panel .die-chip.keep{background:#49375a;border-color:#b69acb}.dice-panel .dice-note{font-size:10px;color:#9ba5b4;line-height:1.5}.dice-panel .dice-close{float:right;background:transparent;border:0;color:#cbd5e1;font-size:20px}.roll-entry{background:#191d25;border:1px solid #303744;border-radius:10px;padding:12px;margin:9px 0;font-size:12px}.roll-entry strong{color:#e2d3ef}.roll-entry .muted{font-size:10px}
 @media(max-width:600px){.dice-launch{right:14px;bottom:14px}.dice-panel{right:10px;bottom:72px}}
+
+/* Refinamento visual do rolador */
+.dice-launch{display:flex;align-items:center;gap:10px;padding:10px 17px 10px 11px;min-height:54px}
+.d20-icon{width:31px;height:31px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+.dice-launch span{font-size:13px;letter-spacing:.01em}
+.dice-heading{display:flex;align-items:center;gap:11px;margin:0 28px 15px 0}
+.dice-heading .d20-icon{width:38px;height:38px;color:#cbb3df}
+.dice-heading h2{margin:0 0 3px}
+.dice-heading .dice-note{margin:0}
+.dice-config{display:grid;grid-template-columns:1fr 86px;gap:12px;align-items:end;background:#151922;border:1px solid #303744;border-radius:11px;padding:11px;margin-bottom:15px}
+.dice-section-label{display:block;font-size:9px;font-weight:750;letter-spacing:.12em;color:#9da7b6}
+.dice-count-options{display:flex;gap:6px;margin-top:7px}
+.dice-count-option{flex:1;border:1px solid #3b4351;background:#202530;color:#d9deea;border-radius:7px;padding:8px 6px;font-weight:700}
+.dice-count-option.active{background:#49375a;border-color:#a78abb;color:#fff;box-shadow:inset 0 0 0 1px #a78abb}
+.dice-dt-field{margin:0!important}
+.dice-dt-field input{padding:8px!important;text-align:center;font-weight:700}
+.dice-types-heading{display:flex;justify-content:space-between;align-items:center;margin:0 1px 6px}
+.dice-type-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.dice-type-card{display:flex!important;align-items:center;justify-content:space-between;gap:8px;background:#202530;border:1px solid #343b49;border-radius:9px;padding:7px 9px!important;margin:0!important}
+.dice-type-card span{font-size:9px!important;letter-spacing:.08em;color:#aeb7c5!important}
+.dice-type-card select{width:auto!important;min-width:76px;padding:7px 9px!important;font-weight:700;border-color:#4a5261!important}
+.dice-identification{margin-top:13px!important}
+@media(max-width:380px){.dice-config{grid-template-columns:1fr 72px}.dice-type-card{padding:6px!important}.dice-type-card select{min-width:68px}}
