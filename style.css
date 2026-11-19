@@ -53,3 +53,9 @@
 .dice-type-card select{width:auto!important;min-width:76px;padding:7px 9px!important;font-weight:700;border-color:#4a5261!important}
 .dice-identification{margin-top:13px!important}
 @media(max-width:380px){.dice-config{grid-template-columns:1fr 72px}.dice-type-card{padding:6px!important}.dice-type-card select{min-width:68px}}
+
+/* Ajustes finais compactos do rolador */
+.dice-launch{width:54px;height:54px;min-height:54px;padding:9px;justify-content:center;border-radius:50%}
+.dice-launch .d20-icon{width:34px;height:34px}
+.dice-type-card{justify-content:center;padding:6px!important}
+.dice-type-card select{width:100%!important;text-align:center}
